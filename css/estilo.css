@@ -1,0 +1,46 @@
+#menu ul li {
+ background-color:#2e518b;
+}
+#menu ul {
+ list-style:none; /*Para no mostrar ningun marcador en la lista*/
+ margin:0; /*Margen 0 */
+ padding:0; /*borde 0 entre el elemento y su contenedor 0 */
+}
+#menu ul a {
+ display:block; /*El elemento de bloque ocupa todo el espacio disponible */
+ color:#fff; /*Color blanco de las letras*/
+ text-decoration:none; /*Quitae el subrayado del enlace*/
+ font-weight:400; /*Grosor de la letra de texto*/
+ font-size:15px;
+ padding:10px;
+ font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ text-transform:uppercase; /*Texto en mayusculas*/
+ letter-spacing:1px; /* cantidad de espeacio entre caracteres */
+}
+#menu ul li {
+ position:relative; /* permite que se desplace respecto a su posición normal*/
+ float:left; /*se colocan los elementos de la lsita en linea*/
+ margin:0; 
+ padding:0;
+}
+#menu ul li:hover {
+ background:#5b78a7;
+}
+#menu ul ul {
+ display:none; /*no se muestra el submeno */
+ position:absolute;
+ top:100%;
+ left:0;
+ padding:0;
+}
+#menu ul ul li {
+ float:none;
+ width:150px
+}
+#menu ul ul a {
+ line-height:120%;
+ padding:10px 15px;
+}
+#menu ul li:hover > ul {
+ display:block;/*muestra el submenu*/
+}
